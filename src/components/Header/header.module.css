@@ -5,6 +5,7 @@
     align-items: center;
     color: #fff;
     height: 70px;
+    padding-inline: 10px 40px ;
 }
 .logo_container {
     display: flex;
@@ -44,9 +45,11 @@
     padding: 14px;
     font-weight: bold;
     outline: 1px solid #fff;
+    
 }
 .search select {
     border: none;
+    padding-block: 15px;
 }
 .search input {
     border: 1px solid #fff;
@@ -54,7 +57,7 @@
     margin-right: -2px;
 }
 .search svg {
-    padding: 10px;
+    padding: 11px;
     background-color: #febd69;
     color: #1a1a1a;
 }
@@ -86,10 +89,13 @@ padding: 10px;
 .language select {
     background-color: #1a1a1a;
     border: none;
+    outline: none;
     color: #fff;
+
 }
 .language img {
     width: 40%;
+    margin-right: 5px;
 }
 .cart {
     position: relative;
@@ -103,11 +109,20 @@ padding: 10px;
     left: 14px;
     color: orange;
 }
+.cart .cartText {
+    position: absolute;
+    font-weight: bold;
+    top: 15px;
+    font-size: 15px;
+    background-color: #1a1a1a;
+    left: 32px;
+    color: rgb(255, 255, 255);
+}
 .search select {
     background-color: #D4D4D4;
 }
-.order_container a:hover , .delivery_container:hover, .logo_container a:hover , .lower_container ul li:hover {
-    border: 1px solid #fff;
+.order_container div:hover , .delivery_container:hover, .logo_container a:hover , .lower_container ul li:hover .signup:hover {
+    outline: 1px solid #fff;
     border-radius: 3px;
 }
 .lower_container {

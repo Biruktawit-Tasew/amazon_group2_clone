@@ -24,22 +24,22 @@ const Header = () => {
         </div>
         <div className={styles.search}>
           <select name="" id="">
-            <option value=""></option>
+            <option value="">All</option>
           </select>
           <input type="text" placeholder="Search Amazon" />
-          <button>
-            <IoSearchOutline />
-          </button>
+          
+            <IoSearchOutline size={25} />
+          
         </div>
         <div className={styles.order_container}>
-          <div>
+          <div className={styles.language}>
             <img src={flag} alt="flag" />
             <select name="" id="">
               <option value="">AM</option>
               <option value="">EN</option>
             </select>
           </div>
-          <div>
+          <div className={styles.signup}>
             <Link>
               <p>Sign in</p>
               <span>Account & Lists</span>
@@ -51,10 +51,11 @@ const Header = () => {
               <span>& Orders</span>
             </Link>
           </div>
-          <div>
+          <div className={styles.cart}>
             <Link>
-              <BiCart />
+              <BiCart size= {35}/>
               <span>0</span>
+              <span className={styles.cartText}>cart</span>
             </Link>
           </div>
         </div>
